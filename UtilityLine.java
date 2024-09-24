@@ -19,3 +19,30 @@ public class UtilityLine implements Mappable{
         this.color = color;
         this.marker = marker;
     }
+
+    @Override
+    public String getLabel() {
+        return name + "(" + uType + ")";
+    }
+
+    @Override
+    public GeometryType getType() {
+        return gType;
+    }
+
+    @Override
+    public Marker getMarker() {
+        return marker;
+    }
+
+    @Override
+    public String toString() {
+        return "UtilityLine{" +
+                "name='" + name + '\'' +
+                ", uType=" + uType +
+                ", gType=" + gType +
+                ", color=" + color +
+                ", marker=" + marker +
+                '}';
+    }
+}
