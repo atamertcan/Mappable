@@ -21,3 +21,30 @@ public class Building implements Mappable{
         this.color = color;
         this.marker = marker;
     }
+
+    @Override
+    public String getLabel() {
+        return name + "(" + usage + ")";
+    }
+
+    @Override
+    public GeometryType getType() {
+        return gType;
+    }
+
+    @Override
+    public Marker getMarker() {
+        return marker;
+    }
+
+    @Override
+    public String toString() {
+        return "Building{" +
+                "name='" + name + '\'' +
+                ", usage=" + usage +
+                ", gType=" + gType +
+                ", color=" + color +
+                ", marker=" + marker +
+                '}';
+    }
+}
