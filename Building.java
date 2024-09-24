@@ -1,1 +1,7 @@
-
+enum UsageType {
+    GOVERNMENT,
+    INSTITUTIONAL,
+    AGRICULTURAL,
+    EDUCATION,
+    HOUSING
+}
